@@ -1,35 +1,3 @@
-// //The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM
-// document.querySelector("#cocktail button").addEventListener('click', () => {
-//   let cocktail = document.querySelector("#cocktail input").value
-//   getCocktail(cocktail)
-  
-
-// })
-
-// function getCocktail(cocktail) {
-//   fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktail}`)
-//     .then(res => res.json()) // parse response as JSON
-//     .then(data => {
-//       console.log(data.drinks[0])
-//       document.querySelector('h2').innerText = data.drinks[0].strDrink
-//       document.querySelector('img').src = `${data.drinks[0].strDrinkThumb}/preview`
-//       document.querySelector('h3').innerText = data.drinks[0].strInstructions
-//       let ingredients = []
-//           Object.keys(data.drinks[0]).forEach(key => {
-//             if (key.indexOf("strIngredient") >= 0 && 
-//             data.drinks[0][key] != null) {
-//               console.log(key)
-//               ingredients.push(data.drinks[0][key])
-//             }
-//           });
-//             const ingredientsStr = `Ingredients: ${ingredients.join(",  ")}`
-//             document.querySelector('#ingredients').innerText = ingredientsStr
-//     })
-//     .catch(err => {
-//         console.log(`error ${err}`)
-//     });
-// }
-
 
   //The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM
 document.querySelector("#ingredient button").addEventListener('click', () => {
